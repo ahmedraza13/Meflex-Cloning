@@ -1,0 +1,586 @@
+/* importing Font */
+/* Metropolis Font */
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Regular.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./fonts/Metropolis/Metropolis-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Space Grotesk Font */
+@font-face {
+  font-family: "Space_Grotesk";
+  src: url("./fonts/Space_Grotesk/static/SpaceGrotesk-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Space_Grotesk";
+  src: url("./fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Space_Grotesk";
+  src: url("./fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Inter Font */
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter/static/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+
+.navbar-logo img {
+  margin-left: 80px;
+}
+
+.navbar-nav {
+  margin-left: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  font-family: Metropolis;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6a6a6a;
+}
+
+.nav-search input {
+  border: 1px solid #f5f5f5;
+  outline: none;
+  margin-left: 80px;
+  width: 426px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  font-family: Metropolis;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 12px 12px 16px;
+  color: #6a6a6a;
+}
+
+.nav-search img {
+  position: relative;
+  right: 40px;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: #e3e3e3;
+}
+
+.nav-container .nav-btn button {
+  border: none;
+  outline: none;
+  margin-right: 80px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-family: Metropolis;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: black;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+/* Navbar MediaQuery */
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .navbar-logo,
+  .navbar-toggler {
+    z-index: 2000;
+  }
+}
+@media screen and (max-width: 1135px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: inherit;
+    align-items: center;
+  }
+  .navbar-logo img {
+    margin-left: 0px;
+  }
+
+  .navbar-nav {
+    margin-left: 0px;
+    gap: 15px;
+  }
+
+  .nav-search input {
+    margin-left: 0px;
+    width: 300px;
+  }
+  .nav-container .nav-btn button {
+    margin-right: 0px;
+  }
+}
+/* _______________Navbar Styling End_______________ */
+
+/* Hero Section Styling */
+
+.hero-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-sec-title {
+  font-family: Metropolis;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -3px;
+  color: #252525;
+  margin-bottom: 0px;
+}
+
+#hero-sec-para {
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #171717;
+  margin-top: 14px;
+  margin-bottom: 0px;
+}
+
+.hero-sec-rounded-image {
+  margin-top: 24px;
+}
+
+.hero-sec-rounded-image img:nth-child(2) {
+  position: relative;
+  right: 3%;
+  cursor: pointer;
+}
+.hero-sec-rounded-image img:nth-child(3) {
+  position: relative;
+  right: 5%;
+  cursor: pointer;
+}
+
+.hero-sec-rounded-image span {
+  border: 1px solid #fefefe;
+  box-shadow: 0px 12px 32px 0px #17171714;
+  background-color: #fafafa;
+  color: #151517;
+  position: relative;
+  right: 8%;
+  font-family: "Metropolis", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 15px 5px;
+  border-radius: 60%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hero-sec-btn {
+  /* margin-top: 58px; */
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px 14px 24px;
+  background-color: #040404;
+  font-family: Metropolis;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+}
+
+/* Hero Section Media Query */
+
+@media only screen and (max-width: 767px) {
+  #hero-sec-title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+  }
+
+  #hero-sec-para {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    text-align: left;
+  }
+}
+
+/* _______________Hero Section Styling End_______________ */
+
+/* Hero Section Card  Styling */
+
+.hero-sec-card {
+  border: 0.7px solid #e3e3e3;
+  border-radius: 16px;
+  box-shadow: 0px 4px 64px 0px #00000024;
+  background-color: #ffffff;
+}
+.left-card {
+  transform-origin: top right;
+  transform: rotate(-11deg);
+  position: relative;
+  top: 22px;
+}
+.center-card {
+  z-index: 1;
+}
+.right-card {
+  transform-origin: top left;
+  transform: rotate(11deg);
+  position: relative;
+  top: 20px;
+  z-index: 2;
+}
+
+.hero-sec-card .card-text > span {
+  font-family: Metropolis;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #6a6a6a;
+}
+
+.hero-sec-card .card-text > p {
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #252525;
+}
+
+.hero-sec-card-price-title,
+.hero-sec-card-bid-price-title {
+  font-family: Metropolis;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #6a6a6a;
+}
+
+.hero-sec-card-price,
+.hero-sec-card-bid-price {
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #252525;
+}
+
+/* Hero Sec Card Media Query */
+
+@media screen and (max-width: 767px) {
+  .hero-sec-card .card-text > span {
+    font-family: Space-Grotesk, sans-serif;
+    font-size: 6px;
+    font-weight: 300;
+    line-height: 8px;
+    letter-spacing: 0px;
+    color: #6a6a6a;
+  }
+
+  .hero-sec-card .card-text > p {
+    font-family: Space-Grotesk, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+
+  .hero-sec-card-price-title,
+  .hero-sec-card-bid-price-title {
+    font-family: Space-Grotesk, sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+
+  .hero-sec-card-price,
+  .hero-sec-card-bid-price {
+    font-family: Space-Grotesk, sans-serif;
+    font-size: 7px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}
+
+/* _______________Hero Section Card Styling End_______________ */
+
+/* Featured Section Styling */
+
+.featured-section {
+  margin-top: 137px;
+}
+
+.featured-section h1 {
+  font-family: Metropolis;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+  color: #252525;
+  text-align: center;
+}
+
+.featured-section-images {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Featured Section Media Query */
+@media screen and (max-width: 600px) {
+  .featured-section-images img {
+    width: 80px;
+  }
+}
+
+/* ___________Featured Section Styling End_______________ */
+
+/* Sale Section Styling */
+
+.landing-page-sale-section {
+  margin-top: 46px;
+
+  padding-bottom: 35px;
+  background-color: black;
+}
+
+.landing-page-sale-section h1 {
+  padding-top: 35px;
+  margin-bottom: 0px;
+  font-family: Metropolis;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.landing-page-sale-section p {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-family: Metropolis;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.landing-page-sale-section #sale-section-date {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  border: 1px solid white;
+  background-color: white;
+  font-family: Metropolis;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1px;
+  color: #252525;
+}
+
+.landing-page-sale-section .sale-section-btn {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.landing-page-sale-section .sale-section-btn button {
+  align-self: center;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  width: 80%; /* Use a percentage for relative width */
+  max-width: 180px;
+  height: 48px; /* Allow the height to adjust based on content */
+  max-height: 48px;
+  background-color: #ffffff;
+  font-family: Metropolis;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5; /* Adjust as needed */
+  letter-spacing: 0em;
+  text-align: center;
+  color: #252525;
+}
+
+.landing-page-sale-section .sale-section-btn span {
+  display: block;
+  margin-top: 2px;
+  font-family: Metropolis;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6a6a6a;
+}
+
+/* Sale Section Media Query */
+@media screen and (max-width: 600px) {
+  .landing-page-sale-section h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .landing-page-sale-section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .landing-page-sale-section #sale-section-date {
+    font-size: 12px;
+  }
+  .landing-page-sale-section .sale-section-btn button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .landing-page-sale-section img {
+    display: none;
+  }
+}
+
+/* ___________Sale Section Styling End_______________ */
+
+/* Artist Section Styling  */
+
+.landing-page-artist-section {
+  margin-top: 80px;
+}
+
+.landing-page-artist-section h1 {
+  font-family: Metropolis;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+  text-align: left;
+  color: #252525;
+}
+
+.landing-page-artist-section p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6a6a6a;
+}
+
+.landing-page-artist-section .artist-btn {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  background-color: #f5f5f5;
+  font-family: Metropolis;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #252525;
+  text-align: center;
+  position: relative;
+  bottom: 25px;
+}
+
+/* _____________Artist Section Styling End_______________  */
+
+/* Artist Section Card Styling */
+
+.landing-page-artist-section .artist-section-card {
+  border: 0.7px solid #e3e3e3;
+  border-radius: 16px;
+  box-shadow: 0px 4px 64px 0px #00000024;
+  background-color: #f6f6f6;
+}
+
+.landing-page-artist-section .artist-section-card button {
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 4px 8px 4px 8px;
+  background-color: #252525;
+  font-family: Metropolis;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  text-align: right;
+  color: #ffffff;
+}
